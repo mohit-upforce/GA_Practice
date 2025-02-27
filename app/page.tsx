@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import ReactGA from "react-ga4";
 
 export default function Home() {
