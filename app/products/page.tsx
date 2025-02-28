@@ -1,5 +1,10 @@
+import { Metadata } from 'next';
 import React from 'react'
 
+export const metadata: Metadata = {
+    title: "Products Page",
+    description: "Product Page Description",
+  };
 const Products = () => {
   return (
     <div className='px-10 flex flex-col gap-5'>
