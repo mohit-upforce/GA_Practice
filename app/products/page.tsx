@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     { id: 'p020', title: 'Coffee Grinder', description: 'Electric burr grinder with adjustable settings.', price: 55 }
 ];
 
-
 const Products = () => {
 
     const trackFooterClick = (label: string, url: string, price: number) => {
