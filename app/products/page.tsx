@@ -1,13 +1,14 @@
+
 import { Metadata } from 'next';
 import React from 'react'
-import ReactGA from "react-ga4";
+import ProductCard from './ProductCard';
 
 export const metadata: Metadata = {
     title: "Products Page",
     description: "Product Page Description",
-  };
+};
 
-  const items = [
+const items = [
     { id: 'p001', title: 'Wireless Mouse', description: 'Ergonomic wireless mouse with Bluetooth connectivity.', price: 25 },
     { id: 'p002', title: 'Mechanical Keyboard', description: 'RGB backlit mechanical keyboard with blue switches.', price: 70 },
     { id: 'p003', title: 'Gaming Headset', description: 'Surround sound headset with noise-canceling mic.', price: 50 },
@@ -32,33 +33,13 @@ export const metadata: Metadata = {
 
 const Products = () => {
 
-    const trackFooterClick = (label: string, url: string, price: number) => {
-        console.log("Tracking click event:", label, url); // Debugging
-    
-        ReactGA.event({
-          category: "Footer",
-          action: "Click",
-          label: label, // Name of the footer link
-          value: price, // URL of the clicked link
-        });
-      };
-  return (
-    <div className='px-10 flex flex-col gap-5'>
-        {
-            items?.map((item, index) => (
-                <div key={index} className='bg-[rgba(40,40,40,0.1)] rounded-md p-10'>
-            <p>{item.title}</p>
-            <p>{item.description}</p>
-            <span>$ {item.price} </span>
-            <footer className='flex gap-4'>
-                <button onClick={() => trackFooterClick(item.title, item.description, item.price)}>Add to Cart</button>
-                <button>Buy</button>
-            </footer>
+    return (
+        <div className='px-10 flex flex-col gap-5'>
+            {
+                items?.map((item, index) => <ProductCard key={index} title={item.title} description={item.description} price={item.price}/>)
+            }
         </div>
-            ))
-        }
-    </div>
-  )
+    )
 }
 
 export default Products
