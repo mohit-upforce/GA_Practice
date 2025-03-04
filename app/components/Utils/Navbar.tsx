@@ -36,6 +36,7 @@ const Navbar = () => {
   const trackNavbarClick = (label: string, url: string, key: number) => {
     console.log("Tracking click event:", label, url); // Debugging
 
+    // Hello
     ReactGA.event({
         category: "Navbar",
         action: "Click",
