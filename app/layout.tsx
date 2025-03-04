@@ -33,10 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased pb-[40px]`}
       >
         <Analytics />
-<<<<<<< HEAD
         <SpeedInsights />
-=======
->>>>>>> origin/main
         <Wrapper>
           <Navbar />
           {children}
