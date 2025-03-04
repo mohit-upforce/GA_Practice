@@ -47,7 +47,7 @@ const Navbar = () => {
     <div className='flex py-10'>
         <ul className='flex gap-5 mx-auto'>
           {
-            list?.map((el, ind) => <li onClick={() => trackNavbarClick(el?.label, el?.url, el.key)}><Link key={ind} href={el?.url}>{el.label}</Link></li> )
+            list?.map((el, ind) => <li key={ind} onClick={() => trackNavbarClick(el?.label, el?.url, el.key)}><Link key={ind} href={el?.url}>{el.label}</Link></li> )
           }
         </ul>
     </div>
