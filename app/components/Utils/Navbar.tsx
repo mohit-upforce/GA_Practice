@@ -39,7 +39,7 @@ const Navbar = () => {
     // Hello
     ReactGA.event({
         category: "Navbar",
-        action: "Click",
+        action: "add-to-cart",
         label: label, // Name of the footer link
         value: key, // URL of the clicked link      
         nonInteraction: false,  

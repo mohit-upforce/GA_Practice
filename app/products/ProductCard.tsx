@@ -10,7 +10,7 @@ const ProductCard = ({ title, description, price }: { title: string, description
 
         ReactGA.event({
             category: "Products",
-            action: "Click",
+            action: "add-to-cart",
             label: label, // Name of the footer link
             value: price, // URL of the clicked link
         });
