@@ -24,7 +24,7 @@ const ProductCard = ({ title, description, price }: { title: string, description
             <p>{description}</p>
             <span>$ {price} </span>
             <footer className='flex gap-4'>
-                <button id='product-clicko' onClick={() => trackFooterClick(title, description, price)}>Add to Cart</button>
+                <button className='product-clicko' id='product-clicko' onClick={() => trackFooterClick(title, description, price)}>Add to Cart</button>
                 <button>Buy</button>
             </footer>
         </div>
