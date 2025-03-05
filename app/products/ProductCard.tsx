@@ -9,10 +9,13 @@ const ProductCard = ({ title, description, price }: { title: string, description
         console.log("Tracking click event:", label, url); // Debugging
 
         ReactGA.event({
-            category: "Footer",
+            category: "Products",
             action: "Click",
             label: label, // Name of the footer link
             value: price, // URL of the clicked link
+        });
+        ReactGA.ga('send', 'event', 'Products', 'Click', label, {
+            dimension1: "Products",  // Custom dimension for location
         });
     };
     return (

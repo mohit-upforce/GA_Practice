@@ -41,8 +41,14 @@ const Navbar = () => {
         category: "Navbar",
         action: "Click",
         label: label, // Name of the footer link
-        value: key, // URL of the clicked link
+        value: key, // URL of the clicked link      
+        nonInteraction: false,  
+        // customDimensions: { location: "Navbar" }, // Custom event parameter
+
     });
+    ReactGA.ga('send', 'event', 'Navbar', 'Click', label, {
+      dimension1: "Navbar",  // Custom dimension for location
+  });
 };
   return (
     <div className='flex py-10'>
