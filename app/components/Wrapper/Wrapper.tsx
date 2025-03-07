@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactGA from "react-ga4";
-import TagManager from "react-gtm-module";  // Import GTM package
 interface WrapperInterface{
     children: React.ReactNode
 }
