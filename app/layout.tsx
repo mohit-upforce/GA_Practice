@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       {
         url: `https://www.epidemicsound.com/staticfiles/legacy/20/images/epidemic-sound-logo-square.png`,
         width: 200,
-        height: 200,
+        height: 100,
         alt: "Halal Soundtracks",
       },
     ],
