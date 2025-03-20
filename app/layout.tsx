@@ -47,6 +47,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+      <meta
+          property="og:image"
+          content={`https://halal-beats.s3.amazonaws.com/images/halal-logo.png`}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased pb-[40px]`}
       >
