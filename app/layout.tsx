@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Halal Soundtracks provides high-quality, 100% vocal-only tracks for content creators, businesses, filmmakers, and brands. Whether you need soundtracks for YouTube videos, commercials, or social media, our royalty-free library ensures your content stays engaging and aligned with your values. License, and create without compromise.",
     images: [
       {
-        url: `https://halal-beats.s3.amazonaws.com/images/halal-logo.png`,
+        url: `https://www.epidemicsound.com/staticfiles/legacy/20/images/epidemic-sound-logo-square.png`,
         width: 200,
         height: 200,
         alt: "Halal Soundtracks",
@@ -50,7 +50,7 @@ export default function RootLayout({
       <head>
       <meta
           property="og:image"
-          content={`https://halal-beats.s3.amazonaws.com/images/halal-logo.png`}
+          content={`https://www.epidemicsound.com/staticfiles/legacy/20/images/epidemic-sound-logo-square.png`}
         />
       </head>
       <body
